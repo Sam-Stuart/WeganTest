@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="/frags/_doc_template.xhtml">
+    <ui:define name="content">
+        <h:panelGrid style="padding: 20px 50px 20px 40px; font-size: 13px; line-height: 23px; width: 100%">
+            <h2>Overview:</h2>
+            <p>
+                MetaboAnalyst 4.0 now contains a total of 12 modules organized into four general categories: 
+                <ul>
+                    <li>
+                        <b>Exploratory statistical analysis</b>: general statistics, biomarker analysis, two-factor/time-series analysis, and power analysis
+                    </li>
+                     <li>
+                       <b>Functional enrichment analysis</b>: metabolite set enrichment analysis, metabolic pathway analysis, and pathway activity prediction from MS peaks (mummichog)
+                    </li>
+                     <li>
+                       <b>Data integration &amp; systems biology</b>: biomarker meta-analysis, joint-pathway analysis, and network explorer
+                    </li>
+                     <li>
+                       <b>Data processing &amp; utility functions</b>: compound ID conversion, batch effect correction, lipidomics, and links to several spectra analysis tools
+                    </li>
+                </ul>
+                It accepts a variety of metabolomics data types, as well as list of genes or KEGG orthologs (KOs) to support integrative analysis with transcriptomics or metagenomics 
+                respectively. 
+            </p>
+            <h:panelGrid style="text-align: center; width: 80%">
+            <img src="#{facesContext.externalContext.requestContextPath}/resources/images/ma4_overview.png" width='800'
+                 alt="Flow Chart"/>
+            </h:panelGrid>
+        </h:panelGrid>
+    </ui:define>
+</ui:composition>
